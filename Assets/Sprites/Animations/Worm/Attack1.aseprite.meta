@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 68310780310b64d90a3b8c538136421c
+guid: ca03b29f3e9bd4481acf2465c4b2c730
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639129409068341860
+  platformSettingsDirtyTick: 639129693630714560
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: tunnelWorm-Sheet
+  - name: tunnelWorm_attack1
     originalName: 
-    pivot: {x: 0.50230414, y: 0}
+    pivot: {x: 0.5014493, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 217
-      height: 59
-    spriteID: a20e26d1c8ce048d4a0d7d1d1bc6fe03
+      width: 345
+      height: 64
+    spriteID: 443ae468ab2a84ccfb0debbcc88c8ca9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -149,7 +149,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: -15, y: 4}
   spriteSheetImportData:
-  - name: tunnelWorm-Sheet_0
+  - name: Attack1_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -157,11 +157,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
+      x: 0
       y: 4
-      width: 25
-      height: 59
-    spriteID: f9d664300ee634fb4aca64fdebf4de56
+      width: 32
+      height: 64
+    spriteID: c0ba866869cba46f0974dd8eff84d0bc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: tunnelWorm-Sheet_1
+  - name: Attack1_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -178,11 +178,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 68
+      x: 56
       y: 4
-      width: 25
-      height: 59
-    spriteID: f22faa0bc36314f74ae9c273312a225a
+      width: 48
+      height: 64
+    spriteID: bfdd26c2f401841cfbac1cbdf1efbf69
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -191,7 +191,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: tunnelWorm-Sheet_2
+  - name: Attack1_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -199,11 +199,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 132
+      x: 120
       y: 4
-      width: 25
-      height: 59
-    spriteID: d4e752c3ed0c84e8c93d7748906e901a
+      width: 48
+      height: 64
+    spriteID: 7470206aac6a24573bfef2a0e3291c43
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: tunnelWorm-Sheet_3
+  - name: Attack1_3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -220,11 +220,53 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 196
+      x: 193
       y: 4
-      width: 25
-      height: 59
-    spriteID: 1594e61b0a5964f1280c48b1ba485cf1
+      width: 32
+      height: 64
+    spriteID: 54a1ee2ff20c445d29bc4aeeab7c21f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Attack1_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 4
+      width: 32
+      height: 64
+    spriteID: 0481e69eb8c8343b497d1c87d2c2b188
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Attack1_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 4
+      width: 32
+      height: 64
+    spriteID: 2a60828db820d4ff49cd8d86198df040
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -237,25 +279,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 4161777465
+      value0: 3210409521
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: tunnelWorm-Sheet
+    name: tunnelWorm_attack1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: tunnelWorm-Sheet
+    - name: Attack1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 256
+        width: 384
         height: 64
-      spriteId: a20e26d1c8ce048d4a0d7d1d1bc6fe03
+      spriteId: 443ae468ab2a84ccfb0debbcc88c8ca9
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -301,5 +343,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 256, y: 64}
-  previousTextureSize: {x: 256, y: 128}
+  canvasSize: {x: 384, y: 64}
+  previousTextureSize: {x: 512, y: 128}
