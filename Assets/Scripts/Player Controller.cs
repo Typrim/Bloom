@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     private const float HORIZONTAL_SPEED = 2.8f;
     private const float JUMP_FORCE = 300;
-    private const float DAMAGE = 15;
+    private const int DAMAGE = 15;
     private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
