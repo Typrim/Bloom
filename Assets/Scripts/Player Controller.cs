@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private const float JUMP_FORCE = 300;
     private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
     private bool grounded;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         grounded = false;
     }
 
@@ -41,7 +43,7 @@ public class PlayerController : MonoBehaviour
         //attack
         if (Keyboard.current.pKey.wasPressedThisFrame)
         {
-            
+            animator.SetBool("attacking", true);
         }
     }
 
@@ -58,5 +60,10 @@ public class PlayerController : MonoBehaviour
         {
             grounded = false;
         }
+    }
+
+    public void stopAttack()
+    {
+        animator.SetBool("attacking", false);
     }
 }
