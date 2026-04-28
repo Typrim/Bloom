@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3615015789951553504}
   - component: {fileID: 5570175080497847327}
   - component: {fileID: 4208481428183573661}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Worm
   m_TagString: Enemy
   m_Icon: {fileID: 0}

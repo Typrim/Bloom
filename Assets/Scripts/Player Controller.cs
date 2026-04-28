@@ -5,10 +5,14 @@ public class PlayerController : MonoBehaviour
 {
     private const float HORIZONTAL_SPEED = 2.8f;
     private const float JUMP_FORCE = 300;
+    private const float DAMAGE = 15;
     private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private bool grounded;
+    public Transform attackZone;
+    public float attackRadius;
+    public LayerMask enemyLayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,7 +47,7 @@ public class PlayerController : MonoBehaviour
         //attack
         if (Keyboard.current.pKey.wasPressedThisFrame)
         {
-            animator.SetBool("attacking", true);
+            Attack();
         }
     }
 
@@ -62,8 +66,32 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void stopAttack()
+    void Attack()
+    {
+        //play attack animation
+        animator.SetBool("attacking", true);
+        //detect enemies in range
+        Collider2D[] enemiesHit = Physics2D.OverlapCircleAll(attackZone.position, attackRadius, enemyLayer);
+        //damage enemies
+        foreach (Collider2D enemy in enemiesHit)
+        {
+            enemy.GetComponent<WormBehavior>().TakeDamage(DAMAGE);
+        }
+    }
+
+    public void StopAttack()
     {
         animator.SetBool("attacking", false);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        //no attack point
+        if (attackZone == null)
+        {
+            return;
+        }
+
+        Gizmos.DrawWireSphere(attackZone.position, attackRadius);
     }
 }

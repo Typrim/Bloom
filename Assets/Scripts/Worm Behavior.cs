@@ -16,12 +16,6 @@ public class WormBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //dead
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
-
         if (attackTimer < 0)
         {
             animator.SetBool("attacking", true);
@@ -32,7 +26,21 @@ public class WormBehavior : MonoBehaviour
         }
     }
 
-    public void stopAttack()
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
+    public void StopAttack()
     {
         animator.SetBool("attacking", false);
     }
