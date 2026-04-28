@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    private const float HORIZONTAL_SPEED = .0015f;
+    private const float HORIZONTAL_SPEED = 2.8f;
     private const float JUMP_FORCE = 300;
     private Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
@@ -26,12 +26,12 @@ public class PlayerController : MonoBehaviour
         Vector3 updatedPosition = transform.position;
         if (Keyboard.current.aKey.isPressed)
         {
-            updatedPosition.x -= HORIZONTAL_SPEED;
+            updatedPosition.x -= HORIZONTAL_SPEED * Time.deltaTime;
             spriteRenderer.flipX = true;
         }
         if (Keyboard.current.dKey.isPressed)
         {
-            updatedPosition.x += HORIZONTAL_SPEED;
+            updatedPosition.x += HORIZONTAL_SPEED * Time.deltaTime;
             spriteRenderer.flipX = false;
         }
         transform.position = updatedPosition;

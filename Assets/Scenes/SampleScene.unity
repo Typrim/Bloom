@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 573969499}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1035,13 +1035,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6903270476138111618, guid: 4a340721216864e90ad705541e9f66dd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7071435007872660635, guid: 4a340721216864e90ad705541e9f66dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.979
       objectReference: {fileID: 0}
     - target: {fileID: 7071435007872660635, guid: 4a340721216864e90ad705541e9f66dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.913
+      value: -2.38
       objectReference: {fileID: 0}
     - target: {fileID: 7071435007872660635, guid: 4a340721216864e90ad705541e9f66dd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1192,6 +1196,10 @@ PrefabInstance:
     - target: {fileID: 753512878265670580, guid: bef6cc11f843642558ba3fc875218b8d, type: 3}
       propertyPath: m_Name
       value: Worm
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618038935184815916, guid: bef6cc11f843642558ba3fc875218b8d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
